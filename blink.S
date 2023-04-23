@@ -20,8 +20,8 @@ L1:
 
 delay:
 	LDI R17, 255        ; load immediate value 255 into R17
-	LDI R18, 255        ; load immediate value 255 into R8
-	LDI R19, 61        ; load immediate value 255 into R8
+	LDI R18, 150        ; load immediate value 255 into R8
+	LDI R19, 31        ; load immediate value 255 into R8
 	
 	loop1:
 		DEC R17
