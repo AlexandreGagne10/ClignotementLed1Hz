@@ -19,7 +19,7 @@ L1:
 	JMP L1           ; jump to L1
 
 delay:
-	  LDI R20, 50
+	  LDI R20, 25
 D0: LDI R21, 255
 D1: LDI R22, 250
 D2: NOP
