@@ -20,7 +20,7 @@ L1:
 	JMP L1            ; (jump) L1
 
 delay:
-	LDI R20, 25     ; (load immediate) la valeur 25 dans R20
+	LDI R20, 25		  ; (load immediate) la valeur 25 dans R20
 D0:	LDI R21, 255      ; (load immediate) la valeur 255 dans R21
 D1:	LDI R22, 250      ; (load immediate) la valeur 250 dans R22
 D2:	NOP               ; (no operation)
