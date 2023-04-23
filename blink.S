@@ -19,26 +19,18 @@ L1:
 	JMP L1           ; jump to L1
 
 delay:
-	LDI R17, 255        ; load immediate value 255 into R17
-	LDI R18, 150        ; load immediate value 255 into R8
-	LDI R19, 31        ; load immediate value 255 into R8
-	
-	loop1:
-		DEC R17
-		NOP
-		BRNE loop1
-		LDI R17, 255
-	loop2:
-		DEC R18
-		NOP
-		BRNE loop1
-		LDI R18, 255
-	loop3:
-		DEC R19
-		NOP
-		BRNE loop1
-		LDI R19, 10
-		RET
+	  LDI R20, 50
+D0: LDI R21, 255
+D1: LDI R22, 250
+D2: NOP
+    NOP
+    DEC R22
+    BRNE D2
+    DEC R21
+    BRNE D1
+    DEC R20
+    BRNE D0
+    RET
 
 ledON:
 	LDI R16, 0x80     ; load immediate value 0x80 into R16
